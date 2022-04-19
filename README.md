@@ -34,8 +34,18 @@ xbt_apr22_df.columns = kraken_ohlc_cols
 ![png](images/btc_trds_box.png)
 
 ## Machine Learning Model | Support Vector Machine
-![png](images/import.png)
-![png](images/scalar.png)
+```
+from sklearn.preprocessing import StandardScaler
+from sklearn.model_selection import GridSearchCV
+from sklearn.metrics  import mean_squared_error, r2_score
+from sklearn.svm import SVR
+```
+```
+scaler = StandardScaler()
+X_scaled_train = scaler.fit_transform(X_train)
+X_scaled_test = scaler.transform(X_test) 
+# not using fit to avoid data leakage 
+```
 ![png](images/param.png)
 
 
