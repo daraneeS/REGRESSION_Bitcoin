@@ -26,11 +26,15 @@ xbt_apr22_df.columns = kraken_ohlc_cols
 ## Visualization
 
 ![png](images/btc_close_box.png)
-<hr ./>
+<hr />
 ![png](images/btc_vol_line.png)
+<hr />
 ![png](images/btc_vol_box.png)
+<hr />
 ![png](images/btc_trds_line.png)
+<hr />
 ![png](images/btc_trds_box.png)
+<hr />
 
 ## Support Vector Machine
 ```
