@@ -32,6 +32,7 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, aliquid cum 
 ## Data Modeling
 
 ## Evaluation
+![png](images/predict_actual_table.png)
 ![png](images/predict_actual.png)
 
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, aliquid cum vitae, ipsa consequatur amet eum maiores sequi dolorum id minus dolore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, aliquid cum vitae, ipsa consequatur amet eum maiores sequi dolorum id minus dolore.
