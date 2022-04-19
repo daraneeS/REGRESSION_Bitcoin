@@ -2,7 +2,9 @@
 
 ## Overview
 
-Predict Bitcoin daily close price before the end of traidng day. Data from KraKen API OHLC endpoint combined with OHLC for historical data dated back to 2013. Machine Learning Model used initially is Support Vector Machine. However, other ML models can be used to compare and improve accuracy.
+* Predict Bitcoin daily close price before the end of traidng day. 
+* **Data** from **KraKen API OHLC endpoint** combined with OHLC for historical data dated back to 2013. 
+* **Machine Learning Model** used initially is **Support Vector Machine**. However, other ML models can be used to compare and improve accuracy.
 
 ![png](images/btc_close_line.png)
 
