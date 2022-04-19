@@ -33,7 +33,7 @@ xbt_apr22_df.columns = kraken_ohlc_cols
 ![png](images/btc_trds_line.png)
 ![png](images/btc_trds_box.png)
 
-## Machine Learning Model | Support Vector Machine
+## Support Vector Machine
 ```
 from sklearn.preprocessing import StandardScaler
 from sklearn.model_selection import GridSearchCV
@@ -50,7 +50,7 @@ X_scaled_test = scaler.transform(X_test)
 
 
 
-## Evaluation
+## Result
 
 ![png](images/predict_actual.png)
 ![png](images/predict_actual_april22.png)
@@ -66,4 +66,4 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, aliquid cum 
 * The model can be developed to live prediction and with shorter timeframe, 4 hours, 1 hours as example
 * The model can be improved, modified and used with other cryptocurrency or stocks
 
-## Conclusions
+
