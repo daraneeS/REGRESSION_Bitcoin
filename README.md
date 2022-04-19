@@ -19,16 +19,21 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, aliquid cum 
 ## Data Understanding and Preparation
 
 ### Visualizing the Data
-
+#### Average Close Price
 ![png](images/btc_close_box.png)
 
+#### Average Volume
+![png](images/btc_vol_line.png)
+![png](images/btc_vol_box.png)
+
+####  Average Trades
+![png](images/btc_trds_line.png)
+![png](images/btc_trds_box.png)
 
 ## Data Modeling
 
 ## Evaluation
 
-![png](images/btc_vol_line.png)
-![png](images/btc_vol_box.png)
 
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, aliquid cum vitae, ipsa consequatur amet eum maiores sequi dolorum id minus dolore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, aliquid cum vitae, ipsa consequatur amet eum maiores sequi dolorum id minus dolore.
 
