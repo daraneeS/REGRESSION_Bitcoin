@@ -13,11 +13,10 @@
 
 ## Data Source and Preparation
 
-* **KraKen API OHLC**
 * **KraKen Historical OHLC**
-# The columns from OHLC API (different from historical data)
-```
+* **KraKen API OHLC**
 
+```
 kraken_ohlc_cols = ["date","open", "high", "low", "close", "vwap","volume", "trades"]
 
 resp = requests.get('https://api.kraken.com/0/public/OHLC?pair=XBTUSD&interval=1440&since=unix_now').json()
@@ -25,7 +24,6 @@ resp = requests.get('https://api.kraken.com/0/public/OHLC?pair=XBTUSD&interval=1
 xbt_apr22_df = pd.DataFrame(resp["result"]['XXBTZUSD'])
 
 xbt_apr22_df.columns = kraken_ohlc_cols
-
 ```
 ### Visualizing the Data
 
