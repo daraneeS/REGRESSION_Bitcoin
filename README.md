@@ -12,11 +12,13 @@
 ---
 
 ## Data Source and Preparation
-**KraKen API** and historical OHLC csv
-* **KraKen API OHLC** https://docs.kraken.com/rest/#operation/getOHLCData
-* **historical OHLC**https://support.kraken.com/hc/en-us/articles/360047124832-Downloadable-historical-OHLCVT-Open-High-Low-Close-Volume-Trades-data
 
-
+* **KraKen API OHLC**
+* **KraKen Historical OHLC**
+# The columns from OHLC API (different from historical data)
+'''
+kraken_ohlc_cols = ["date","open", "high", "low", "close", "vwap","volume", "trades"]
+'''
 ### Visualizing the Data
 
 ![png](images/btc_close_box.png)
