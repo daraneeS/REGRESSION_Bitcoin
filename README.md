@@ -1,5 +1,5 @@
 # REGRESSION: Bitcoin Price Predict
----
+
 ## Overview
 
 * Predict Bitcoin **daily close price** before the end of traidng day. 
@@ -35,7 +35,6 @@ xbt_apr22_df.columns = kraken_ohlc_cols
 
 ![png](images/btc_trds_box.png)
 
-<hr ./>
 
 ## Support Vector Machine
 ```
