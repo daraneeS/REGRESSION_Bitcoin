@@ -9,8 +9,6 @@
 ![png](images/btc_close_line.png)
 
 
----
-
 ## Data Source and Preparation
 
 * **KraKen Historical OHLC**
@@ -28,42 +26,47 @@ xbt_apr22_df.columns = kraken_ohlc_cols
 ## Visualization
 
 ![png](images/btc_close_box.png)
+
 ![png](images/btc_vol_line.png)
+
 ![png](images/btc_vol_box.png)
+
 ![png](images/btc_trds_line.png)
+
 ![png](images/btc_trds_box.png)
 
-## Machine Learning Model | Support Vector Machine
-![png](images/SVM_SVR.png)
 
+## Support Vector Machine
 ```
-param_grid = {'kernel': ['linear'], 'C': [100,300, 500], 'epsilon': [0.00001, 0.0001, 0.001]}
-svr = SVR()
-grid_search = GridSearchCV(svr, param_grid, cv=5, scoring='r2')
-grid_search.fit(X_scaled_train, y_train)
-print(grid_search.best_params_)
-svr_best = grid_search.best_estimator_
-pred_svr_adjusted = svr_best.predict(X_scaled_test)
-print(np.sqrt(mean_squared_error(y_test, pred_svr_adjusted)))
-print(r2_score(y_test, pred_svr_adjusted))
-
+from sklearn.preprocessing import StandardScaler
+from sklearn.model_selection import GridSearchCV
+from sklearn.metrics  import mean_squared_error, r2_score
+from sklearn.svm import SVR
 ```
+```
+scaler = StandardScaler()
+X_scaled_train = scaler.fit_transform(X_train)
+X_scaled_test = scaler.transform(X_test) 
+# not using fit to avoid data leakage 
+```
+![png](images/param.png)
 
 
-## Evaluation
+
+## Result
 
 ![png](images/predict_actual.png)
 ![png](images/predict_actual_april22.png)
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, aliquid cum vitae, ipsa consequatur amet eum maiores sequi dolorum id minus dolore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, aliquid cum vitae, ipsa consequatur amet eum maiores sequi dolorum id minus dolore.
 
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, aliquid cum vitae, ipsa consequatur amet eum maiores sequi dolorum id minus dolore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, aliquid cum vitae, ipsa consequatur amet eum maiores sequi dolorum id minus dolore.
-
-## Possible Application/Business Problem
+## Possible Application
 
 * Help inform retail investors/users possible close price, ruturn , trend of Bitcoin and other cryptocurrency
 * The model can be developed to live prediction and with shorter timeframe, 4 hours, 1 hours as example
 * The model can be improved, modified and used with other cryptocurrency or stocks
 
-## Conclusions
+## Futher Improvement
+* Using other machine learning models to compare and improve accuracy of the prediction, such as XGBoost, Random Forest, Deep Learning/LSTM etc.
+* Adding more features such as VWAP, RSI, etc.
+* Shorter timeframe such as 4 hours, 1 hours, 30 minutes etc.
