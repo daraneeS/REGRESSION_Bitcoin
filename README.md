@@ -34,20 +34,10 @@ xbt_apr22_df.columns = kraken_ohlc_cols
 ![png](images/btc_trds_box.png)
 
 ## Machine Learning Model | Support Vector Machine
-![png](images/SVM_SVR.png)
+![png](images/import.png)
+![png](images/scalar.png)
+![png](images/param.png)
 
-```
-param_grid = {'kernel': ['linear'], 'C': [100,300, 500], 'epsilon': [0.00001, 0.0001, 0.001]}
-svr = SVR()
-grid_search = GridSearchCV(svr, param_grid, cv=5, scoring='r2')
-grid_search.fit(X_scaled_train, y_train)
-print(grid_search.best_params_)
-svr_best = grid_search.best_estimator_
-pred_svr_adjusted = svr_best.predict(X_scaled_test)
-print(np.sqrt(mean_squared_error(y_test, pred_svr_adjusted)))
-print(r2_score(y_test, pred_svr_adjusted))
-
-```
 
 
 ## Evaluation
