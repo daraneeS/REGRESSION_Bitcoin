@@ -63,4 +63,7 @@ X_scaled_test = scaler.transform(X_test)
 * The model can be developed to live prediction and with shorter timeframe, 4 hours, 1 hours as example
 * The model can be improved, modified and used with other cryptocurrency or stocks
 
-
+## Futher Improvement
+* Using other machine learning models to compare and improve accuracy of the prediction, such as XGBoost, Random Forest, Deep Learning/LSTM etc.
+* Adding more features such as VWAP, RSI, etc.
+* Shorten timeframe such as 4 hours, 1 hours, 30 minutes etc.
