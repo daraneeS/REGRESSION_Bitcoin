@@ -2,23 +2,23 @@
 
 ## Overview
 
-* Predict Bitcoin daily close price before the end of traidng day. 
+* Predict Bitcoin **daily close price** before the end of traidng day. 
 * **Data** from **KraKen API OHLC endpoint** combined with OHLC for historical data dated back to 2013. 
 * **Machine Learning Model** used initially is **Support Vector Machine**. However, other ML models can be used to compare and improve accuracy.
 
 ![png](images/btc_close_line.png)
 
-## Business Problem
+## Possible Application/Business Problem
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, aliquid cum vitae, ipsa consequatur amet eum maiores sequi dolorum id minus dolore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, aliquid cum vitae, ipsa consequatur amet eum maiores sequi dolorum id minus dolore.
-
-Questions to address:
-
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, aliquid cum vitae, ipsa consequatur amet eum maiores sequi dolorum id minus dolore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, aliquid cum vitae, ipsa consequatur amet eum maiores sequi dolorum id minus dolore.
+* Help inform retail investors/users possible close price, ruturn , trend of Bitcoin and other cryptocurrency
+* The model can be developed to live prediction and with shorter timeframe, 4 hours, 1 hours as example
+* The model can be improved, modified and used with other cryptocurrency or stocks
 
 ---
 
 ## Data Understanding and Preparation
+
+
 
 ### Visualizing the Data
 
