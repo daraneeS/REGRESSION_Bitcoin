@@ -8,16 +8,13 @@
 
 ![png](images/btc_close_line.png)
 
-## Possible Application/Business Problem
-
-* Help inform retail investors/users possible close price, ruturn , trend of Bitcoin and other cryptocurrency
-* The model can be developed to live prediction and with shorter timeframe, 4 hours, 1 hours as example
-* The model can be improved, modified and used with other cryptocurrency or stocks
 
 ---
 
-## Data Understanding and Preparation
-
+## Data Source and Preparation
+**KraKen API** and historical OHLC csv
+* [KraKen API OHLC][https://docs.kraken.com/rest/#operation/getOHLCData]
+* [historical OHLC][https://support.kraken.com/hc/en-us/articles/360047124832-Downloadable-historical-OHLCVT-Open-High-Low-Close-Volume-Trades-data]
 
 
 ### Visualizing the Data
@@ -41,8 +38,13 @@
 
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, aliquid cum vitae, ipsa consequatur amet eum maiores sequi dolorum id minus dolore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, aliquid cum vitae, ipsa consequatur amet eum maiores sequi dolorum id minus dolore.
 
-### The Model Applicaition
 
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, aliquid cum vitae, ipsa consequatur amet eum maiores sequi dolorum id minus dolore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, aliquid cum vitae, ipsa consequatur amet eum maiores sequi dolorum id minus dolore.
+
+## Possible Application/Business Problem
+
+* Help inform retail investors/users possible close price, ruturn , trend of Bitcoin and other cryptocurrency
+* The model can be developed to live prediction and with shorter timeframe, 4 hours, 1 hours as example
+* The model can be improved, modified and used with other cryptocurrency or stocks
 
 ## Conclusions
