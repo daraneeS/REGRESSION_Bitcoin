@@ -57,7 +57,7 @@ X_scaled_test = scaler.transform(X_test)
 
 
 
-## Possible Application/Business Problem
+## Possible Application
 
 * Help inform retail investors/users possible close price, ruturn , trend of Bitcoin and other cryptocurrency
 * The model can be developed to live prediction and with shorter timeframe, 4 hours, 1 hours as example
