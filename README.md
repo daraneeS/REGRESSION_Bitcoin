@@ -2,22 +2,29 @@
 
 ## Overview
 
-Predict Bitcoin daily close price before the end of traidng day. Data from KraKen API OHLC endpoint combined with OHLC for historical data dated back to 2013. Machine Learning Model used initially is Support Vector Machine. However, other ML models can be used to compare and improve accuracy.
+* Predict Bitcoin **daily close price** before the end of traidng day. 
+* **Data** from **KraKen API OHLC endpoint** combined with OHLC for historical data dated back to 2013. 
+* **Machine Learning Model** used initially is **Support Vector Machine**. However, other ML models can be used to compare and improve accuracy.
 
 ![png](images/btc_close_line.png)
 
-## Business Problem
-
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, aliquid cum vitae, ipsa consequatur amet eum maiores sequi dolorum id minus dolore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, aliquid cum vitae, ipsa consequatur amet eum maiores sequi dolorum id minus dolore.
-
-Questions to address:
-
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, aliquid cum vitae, ipsa consequatur amet eum maiores sequi dolorum id minus dolore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, aliquid cum vitae, ipsa consequatur amet eum maiores sequi dolorum id minus dolore.
 
 ---
 
-## Data Understanding and Preparation
+## Data Source and Preparation
 
+* **KraKen Historical OHLC**
+* **KraKen API OHLC**
+
+```
+kraken_ohlc_cols = ["date","open", "high", "low", "close", "vwap","volume", "trades"]
+
+resp = requests.get('https://api.kraken.com/0/public/OHLC?pair=XBTUSD&interval=1440&since=unix_now').json()
+
+xbt_apr22_df = pd.DataFrame(resp["result"]['XXBTZUSD'])
+
+xbt_apr22_df.columns = kraken_ohlc_cols
+```
 ### Visualizing the Data
 
 ![png](images/btc_close_box.png)
@@ -32,13 +39,20 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, aliquid cum 
 ## Data Modeling
 
 ## Evaluation
-![png](images/predict_table.png)
+
 ![png](images/predict_actual.png)
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, aliquid cum vitae, ipsa consequatur amet eum maiores sequi dolorum id minus dolore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, aliquid cum vitae, ipsa consequatur amet eum maiores sequi dolorum id minus dolore.
-
-### The Model Applicaition
+![png](images/predict_actual_april22.png)
 
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, aliquid cum vitae, ipsa consequatur amet eum maiores sequi dolorum id minus dolore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, aliquid cum vitae, ipsa consequatur amet eum maiores sequi dolorum id minus dolore.
+
+
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, aliquid cum vitae, ipsa consequatur amet eum maiores sequi dolorum id minus dolore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, aliquid cum vitae, ipsa consequatur amet eum maiores sequi dolorum id minus dolore.
+
+## Possible Application/Business Problem
+
+* Help inform retail investors/users possible close price, ruturn , trend of Bitcoin and other cryptocurrency
+* The model can be developed to live prediction and with shorter timeframe, 4 hours, 1 hours as example
+* The model can be improved, modified and used with other cryptocurrency or stocks
 
 ## Conclusions
