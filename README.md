@@ -7,7 +7,7 @@
 * **Machine Learning Model** used initially is **Support Vector Machine**. However, other ML models, such as Linear Regression, XGboost, Random Forest and neural networks can be used to compare and improve accuracy.
 
 ![png](images/btc_close_line.png)
-
+![png](images/BTCUSD_2022-05-24.png)
 
 ## Data Source and Preparation
 
@@ -26,14 +26,23 @@ xbt_apr22_df.columns = kraken_ohlc_cols
 ## Visualization
 
 ![png](images/btc_close_box.png)
+![png](images/btc_close_box_may24.png)
+
 
 ![png](images/btc_vol_line.png)
+![png](images/btc_vol_line_may24.png)
 
 ![png](images/btc_vol_box.png)
+![png](images/btc_vol_box_may24.png)
 
 ![png](images/btc_trds_line.png)
+![png](images/btc_trds_line_may24.png)
 
 ![png](images/btc_trds_box.png)
+![png](images/btc_trds_box_may24.png)
+
+
+![png](images/btc_close_box_2022.png)
 
 
 ## Support Vector Machine
