@@ -6,7 +6,9 @@
 * **Data** from **KraKen API OHLC endpoint** combined with OHLC for historical data dated back to 2013 — about 3,100 days
 * **Machine Learning Model** used initially is **Support Vector Machine**. However, other ML models, such as Linear Regression, XGboost, Random Forest and neural networks can be used to compare and improve accuracy.
 
+#### April 2022
 ![png](images/btc_close_line.png)
+#### May 2022
 ![png](images/BTCUSD_2022-05-24.png)
 
 ## Data Source and Preparation
@@ -24,24 +26,34 @@ xbt_apr22_df = pd.DataFrame(resp["result"]['XXBTZUSD'])
 xbt_apr22_df.columns = kraken_ohlc_cols
 ```
 ## Visualization
-
+#### April 2022
 ![png](images/btc_close_box.png)
+#### May 2022
 ![png](images/btc_close_box_may24.png)
 
 
+#### April 2022
 ![png](images/btc_vol_line.png)
+#### May 2022
 ![png](images/btc_vol_line_may24.png)
 
+
+#### April 2022
 ![png](images/btc_vol_box.png)
+#### May 2022
 ![png](images/btc_vol_box_may24.png)
 
+#### April 2022
 ![png](images/btc_trds_line.png)
+#### May 2022
 ![png](images/btc_trds_line_may24.png)
 
+#### April 2022
 ![png](images/btc_trds_box.png)
+#### May 2022
 ![png](images/btc_trds_box_may24.png)
 
-
+#### May 2022
 ![png](images/btc_close_box_2022.png)
 
 
