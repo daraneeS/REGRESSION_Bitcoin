@@ -65,7 +65,9 @@ X_scaled_test = scaler.transform(X_test)
 ## Result
 
 ![png](images/predict_actual.png)
+![png](images/predict_actual_may24.png)
 ![png](images/predict_actual_april22.png)
+![png](images/predict_actual_table_may24.png)
 
 
 
