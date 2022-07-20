@@ -41,6 +41,11 @@ The main goals of this project are:
 * Adding more features such as Bid price, Ask price, VWAP, RSI, etc.
 * Shorter timeframe such as 4 hours, 1 hours, 30 minutes etc.
 
+___
+
+![png](images/Bitcoin_Tableau.png)
+
+
 ### April 2022
 ![png](images/btc_close_line.png)
 ### May 2022
