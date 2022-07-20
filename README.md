@@ -42,8 +42,7 @@ The main goals of this project are:
 * Shorter timeframe such as 4 hours, 1 hours, 30 minutes etc.
 
 ___
-
-[Tableau](https://public.tableau.com/app/profile/daranee8086/viz/shared/H9RSX9P3S)
+## Visualization | [Tableau](https://public.tableau.com/app/profile/daranee8086/viz/shared/H9RSX9P3S)
 
 ### April 2022
 ![png](images/btc_close_line.png)
@@ -60,7 +59,7 @@ xbt_apr22_df = pd.DataFrame(resp["result"]['XXBTZUSD'])
 
 xbt_apr22_df.columns = kraken_ohlc_cols
 ```
-## Visualization
+
 ### April 2022
 ![png](images/btc_close_box.png)
 ### May 2022
