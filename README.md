@@ -36,7 +36,7 @@ The main goals of this project are:
 * Help inform retail investors/users possible close price, ruturn, trend of Bitcoin and other cryptocurrency
 * The model can be improved, modified and used with other cryptocurrency or stocks
 
-## Futher Improvement
+## Futher Improvement :dart:
 * Using other machine learning models to compare and improve accuracy of the prediction, such as XGBoost, Random Forest, Deep Learning/LSTM etc.
 * Adding more features such as Bid price, Ask price, VWAP, RSI, etc.
 * Shorter timeframe such as 4 hours, 1 hours, 30 minutes etc.
