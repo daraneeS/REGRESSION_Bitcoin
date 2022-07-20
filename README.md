@@ -2,19 +2,50 @@
 
 ## Overview
 
-* Predict Bitcoin **daily close price** before the end of trading day. 
-* **Data** from **KraKen API OHLC endpoint** combined with OHLC for historical data dated back to 2013 — about 3,100 days
-* **Machine Learning Model** used initially is **Support Vector Machine**. However, other ML models, such as Linear Regression, XGboost, Random Forest and neural networks can be used to compare and improve accuracy.
+The main goals of this project are:
+* Getting data from API
+* Creating my own dataset
+* Finding information from the dataset
+* Finding what machine learning model(s) could be used for the dataset
+* Finding insights, possible actionable insights, and hopefully business application from the project
+
+
+## Data Source and Preparation :astonished:
+
+* **Kraken Crypto Currency Exchange**
+* **API OHLC endpoint**
+* CSV OHLC history data
+* Data from 2013 to 2022
+
+## Machine Learning Used
+* **Support Vector Regresion**, as of July 2022
+
+
+## Insights :fire:
+* 2021 was the peek of Bitcoin
+* 2022 Bitcoin started to drop
+* Will it drop to $20,000? (2018's peek)
+* **2022**
+  * Jan-April: Bitcoin price ranges in $35,000-$47,000 Level
+  * May: Bitcoin price dropped to $25,000-40,000 range
+  * June-July?
+
+
+## Possible Actionable Insights and Possible Business Application:fire:
+
+* Help inform retail investors/users possible close price, ruturn, trend of Bitcoin and other cryptocurrency
+* The model can be improved, modified and used with other cryptocurrency or stocks
+
+## Futher Improvement
+* Using other machine learning models to compare and improve accuracy of the prediction, such as XGBoost, Random Forest, Deep Learning/LSTM etc.
+* Adding more features such as Bid price, Ask price, VWAP, RSI, etc.
+* Shorter timeframe such as 4 hours, 1 hours, 30 minutes etc.
 
 ### April 2022
 ![png](images/btc_close_line.png)
 ### May 2022
 ![png](images/BTCUSD_2022-05-24.png)
 
-## Data Source and Preparation
-
-* **KraKen Historical OHLC**
-* **KraKen API OHLC**
 
 ```
 kraken_ohlc_cols = ["date","open", "high", "low", "close", "vwap","volume", "trades"]
@@ -84,13 +115,3 @@ X_scaled_test = scaler.transform(X_test)
 
 
 
-## Possible Application
-
-* Help inform retail investors/users possible close price, ruturn , trend of Bitcoin and other cryptocurrency
-* The model can be developed to live prediction and with shorter timeframe, 4 hours, 1 hours as example
-* The model can be improved, modified and used with other cryptocurrency or stocks
-
-## Futher Improvement
-* Using other machine learning models to compare and improve accuracy of the prediction, such as XGBoost, Random Forest, Deep Learning/LSTM etc.
-* Adding more features such as Bid price, Ask price, VWAP, RSI, etc.
-* Shorter timeframe such as 4 hours, 1 hours, 30 minutes etc.
