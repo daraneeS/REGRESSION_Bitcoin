@@ -43,10 +43,6 @@ The main goals of this project are:
 
 ___
 
-![png](images/Bitcoin_Tableau.png)
-
-
-![png](images/Bitcoin_Tableau2.png)
 
 
 ### April 2022
