@@ -46,6 +46,9 @@ ___
 ![png](images/Bitcoin_Tableau.png)
 
 
+![png](images/Bitcoin_Tableau2.png)
+
+
 ### April 2022
 ![png](images/btc_close_line.png)
 ### May 2022
