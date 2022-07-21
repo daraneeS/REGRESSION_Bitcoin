@@ -33,7 +33,7 @@ The main goals of this project are:
 
 ## Possible Actionable Insights and Possible Business Application:fire:
 
-* Help inform retail investors/users possible close price, ruturn, trend of Bitcoin and other cryptocurrency
+* Help inform retail investors/users possible close price, possible return, trend of Bitcoin and other cryptocurrency
 * The model can be improved, modified and used with other cryptocurrency or stocks
 
 ## Futher Improvement :dart:
