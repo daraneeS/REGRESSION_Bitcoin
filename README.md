@@ -19,6 +19,7 @@ The main goals of this project are:
 
 ## Machine Learning Used
 * **Support Vector Regresion**, as of July 2022
+* **RMSE 1,291. Mean actual close price of $24,119, and Mean predicted close price of $24,655 for June 2022 prediction**
 
 
 ## Insights :fire:
